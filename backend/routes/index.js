@@ -4,8 +4,8 @@ const router = express.Router();
 const AtracaoController = require('../controllers/AtracaoController');
 const DestinoController = require('../controllers/DestinoController');
 
-router.get('/teste', (req, res) => {
-    res.json('teste');
+router.get('/', (req, res) => {
+    res.json('Seja Bem vindo Api do MATrilhas');
 });
 
 router.get('/atracoes', AtracaoController.getAllAttractions);
