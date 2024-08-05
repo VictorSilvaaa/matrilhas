@@ -1,9 +1,27 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "server.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/public/(.*)", "dest": "/public/$1" }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "/server.js",
+      "use": "@vercel/node",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "PORT":"3000",
+    "DB_HOST":"ep-proud-paper-a481onol.us-east-1.aws.neon.tech",
+    "DB_PORT":"5432",
+    "DB_NAME":"MATrilhas",
+    "DB_USER":"MATrilhas_owner",
+    "DB_PASSWORD":"u1zkdv8lrXYQ",
+    "NODE_ENV": "production"
   }
+}
