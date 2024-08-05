@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Histórico - São Luís</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/atracao.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo" src="/assets/img/logo.svg" alt="">
+    <nav class="header__menu">
+        <ul class="header__options">
+            <li class="header__option"><a href="/">Home</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="container atracao">
+    <div class="arrows">
+      <img class="arrows__arrow arrows__arrow--back" src="/assets/img/icons/arrow.png" alt="Voltar">
+    </div>
+  
+    <div class="atracao__banner">
+      <img src="" alt="" class="atracao__banner-img">
+    </div>
+   
+   <div class="atracao__body">
+    <div class="atracao__left">
+      <div class="atracao__informacoes">
+        <h2 class="atracao__titulo"></h2>
+        <p class="atracao__descricao"></p>
+      </div>
+    
+      <div class="atracao__estabelecimentos">
+        <h3 class="atracao__estabelecimentos-titulo">O que há neste Lugar</h3>
+        <ul class="atracao__estabelecimentos-lista">
+        </ul>
+      </div>
+    </div>
+   
+    <div class="atracao__right">
+      <div class="atracao__localizacao">
+        <div id="atracao__mapa" class="atracao__mapa"></div>
+        <div class="atracao__button">
+          <button class="atracao__button"><a target="_blank" id="atracao-btn-map" href="">Ver Localização</a></button>
+        </div>
+      </div>
+    </div>
+   </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-text">MATrilhas</span>
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/assets/js/atracao.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

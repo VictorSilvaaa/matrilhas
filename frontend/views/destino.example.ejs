@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATrilhas - São Luís</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/saoluis.css" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl6aVck02AcArAks6GwG1mpLJk6pTGoSU"></script>
+  <script>
+    function initMap() {
+      var saoluis = {lat: -2.538, lng: -44.282};
+      var map = new google.maps.Map(document.getElementById('map-saoluis'), {
+        zoom: 12,
+        center: saoluis
+      });
+      var marker = new google.maps.Marker({
+        position: saoluis,
+        map: map
+      });
+    }
+  </script>
+</head>
+<body onload="initMap()">
+  <header class="header">
+    <img class="header__logo" src="/assets/img/logo.svg" alt="">
+    <nav class="header__menu">
+        <ul class="header__options">
+            <li class="header__option">Home</li>
+            <li class="header__option"><a href="./destinos">Destinos</a></li>
+        </ul>
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><span class="text-danger">MA</span><span class="text-warning">Trilhas</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Destinos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <a href="alcantara.html" class="card-link">
+            <img src="path/to/alcantara.jpg" alt="Alcântara">
+            <div class="card-content">
+              <h3>Alcântara</h3>
+              <p>A cidade de Alcântara, no Maranhão, é uma cidade histórica conhecida por suas ruínas coloniais, casarões preservados e rica herança cultural, refletindo a história do Brasil imperial.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="barreirinhas.html" class="card-link">
+            <img src="path/to/barreirinhas.jpg" alt="Barreirinhas">
+            <div class="card-content">
+              <h3>Barreirinhas</h3>
+              <p>Barreirinhas, no Maranhão, é a principal porta de entrada para o Parque Nacional dos Lençóis Maranhenses, famoso por suas dunas de areia branca e lagoas cristalinas.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map-saoluis" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

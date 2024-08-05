@@ -1,0 +1,32 @@
+.home{
+    padding-top: 70px;
+    background: url('../img/img-home.png') no-repeat center center;
+    background-clip: padding-box;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+.home .home__title{
+    font-size: 3rem;
+    color: white;
+    margin-top: 10%;
+}
+
+.destinations{
+    width: 100%;
+    display: flex;
+    margin-top: -10vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 50px;
+}
+
+
+@media (max-width:480px){
+    .destinations__cards{
+        display: flex;
+        flex-direction: column;
+    }
+}

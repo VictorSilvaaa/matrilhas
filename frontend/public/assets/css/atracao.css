@@ -1,0 +1,67 @@
+.container{ 
+    padding: 0 var(--size-padding-x);
+}
+.atracao{
+    position: relative;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.atracao__banner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.atracao__banner img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.atracao__titulo, .atracao__estabelecimentos-titulo{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.atracao__body{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.atracao__informacoes{
+    margin-bottom: 1rem;
+}
+
+.atracao__localizacao{
+    height: 100%;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    border: 2px solid #E5A000;
+}
+.atracao__localizacao .atracao__mapa{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+.atracao__button{
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.1rem;
+    background-color: #E5A000;
+    color: black;
+}
+
+@media (max-width:720px){
+    .atracao__body{
+        flex-direction: column;
+    }
+}
