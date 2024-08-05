@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/server.ts",
+        "use": "@vercel/node",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/src/server.ts"
+      }
+    ],
+    "env": {
+      "PORT": "3000",
+      "NODE_ENV": "production"
+    }
+  }
+  
